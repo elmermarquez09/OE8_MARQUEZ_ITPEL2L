@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>
+      Peso to Dollar Converter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card color="warning">
+    <img alt="Silhouette of mountains" src="https://media.istockphoto.com/id/471473926/vector/currency-exchange-dollar-and-peso.jpg?s=612x612&w=0&k=20&c=WXYjBa37j-IK56Gg9s8dWHbxh0Z82m48gWUlzW-116A=" />
+    <ion-card-header>
+      <ion-card-title>Peso to Dollar</ion-card-title>
+      <ion-card-subtitle>Current Rate: 1 PHP = 0.018 USD</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      The Philippine peso derived from the Spanish silver coin Real de a Ocho or Spanish dollar, in wide circulation in the Americas and South-East Asia during the 17th and 18th centuries. The Philippine peso was introduced on May 1, 1852.
+    </ion-card-content>
+  
+    <div class = "list" class="ion-text-center">
+      <label class = "item item-input">
+         <input type = "text" placeholder = "Peso" class="custom" [(ngModel)]="peso"/>
+      </label>
+      <br>
+      <br>
+      <ion-button color="success" class="btn" (click)="convert()">CONVERT</ion-button>
+      <br>
+      <br>
+      <label class = "item item-input">
+         <input placeholder = "Dollar" calss="result" [(ngModel)]="resultDollar"/>
+      </label>
+<br>
+<br>
+  </div>
+  <br>
+</ion-card>
+
+
+</ion-content>

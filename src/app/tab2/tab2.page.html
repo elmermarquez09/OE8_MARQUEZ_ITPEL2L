@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>
+      Dollar to Peso Converter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card color="warning">
+    <img alt="Silhouette of mountains" src="https://media.istockphoto.com/id/471473926/vector/currency-exchange-dollar-and-peso.jpg?s=612x612&w=0&k=20&c=WXYjBa37j-IK56Gg9s8dWHbxh0Z82m48gWUlzW-116A=" />
+    <ion-card-header>
+      <ion-card-title>Dollar to Peso</ion-card-title>
+      <ion-card-subtitle>Current Rate: 1.00 USD =55.51 PHP</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      The U.S. dollar is the currency most used in international transactions. Several countries use the U.S. dollar as their official currency, and many others allow it to be used in a de facto capacity. It's known locally as a buck or greenback.
+    </ion-card-content>
+
+    
+    <div class = "list" class="ion-text-center">
+      <label class = "item item-input">
+         <input type = "text" placeholder = "Dollar" class="custom" [(ngModel)]="dollar"/>
+      </label>
+      <br>
+      <br>
+      <ion-button color="success" class="btn" (click)="convert()">CONVERT</ion-button>
+      <br>
+      <br>
+      <label class = "item item-input">
+         <input placeholder = "Peso" calss="result" [(ngModel)]="resultPeso"/>
+      </label>
+<br>
+<br>
+  </div>
+  <br>
+  </ion-card>
+
+
+</ion-content>
